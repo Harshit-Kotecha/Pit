@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.help.pit.commons.AppButton
 import com.help.pit.commons.ShadowContainer
 import com.help.pit.ui.theme.PitTheme
 
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
             PitTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Box(modifier = Modifier.padding(innerPadding)) {
-                        ShadowContainer {}
+                        AppButton(isPrimary = false)
                     }
                 }
             }
